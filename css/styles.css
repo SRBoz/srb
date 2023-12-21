@@ -6,11 +6,8 @@
     list-style-type: none;
 }
 
-/* Body */
 
-
-
-/* Header */
+/*  Inicio Header */
 
 
 .header {
@@ -20,9 +17,6 @@
     background-repeat: round;
     padding-top: 10px;
 }
-
-/* Nav */
-
 
 
 .nav {
@@ -46,18 +40,21 @@
 
 }
 
-
-
 .desplegable {
     float: right;
 }
 
-/* Main */
+/*  Fin Header */
+
+/* Inicio Main */
 .main {
     background: lightcyan;
 }
 
-/* Section */
+#titulo {
+    text-align: center;
+}
+
 .bienvenidos {
     display: flex;
     justify-content: space-between;
@@ -108,7 +105,6 @@
 
 }
 
-/* Aside */
 .aside {
     text-align: center;
     text-decoration: underline;
@@ -126,8 +122,9 @@
     gap: 20px;
 }
 
+/* Fin Main */
 
-/* Footer */
+/* Inicio Footer */
 
 .footer {
     display: flex;
@@ -163,9 +160,9 @@
 }
 
 
-/* Gadgets */
+/* Fin Footer */
 
-/* Contacto */
+/* Inicio Contacto */
 
 .form {
     background: lightcyan;
@@ -213,3 +210,26 @@
 .btn-form:hover {
     opacity: 150%;
 }
+
+/* Fin Contacto */
+
+
+/* Inicio Europa */
+.carrusel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(49, 51, 53);
+    border: solid lightcyan;
+}
+
+
+.carousel-inner img {
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+
+}
+
+
+/* Media Queries */
