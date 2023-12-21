@@ -1,0 +1,215 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+/* Body */
+
+
+
+/* Header */
+
+
+.header {
+    background-image: url(/images/header-viajero.jpg);
+    background-position: center;
+    height: 10vh;
+    background-repeat: round;
+    padding-top: 10px;
+}
+
+/* Nav */
+
+
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    background: rgb(49, 51, 53);
+    height: auto;
+    width: 100%;
+}
+
+.nav a:hover {
+    display: block;
+    background: #434343;
+}
+
+.nav a {
+    display: block;
+    color: white;
+
+}
+
+
+
+.desplegable {
+    float: right;
+}
+
+/* Main */
+.main {
+    background: lightcyan;
+}
+
+/* Section */
+.bienvenidos {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.parrafos-bienvenidos {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px;
+}
+
+.img-bienvenidos {
+    height: 15rem;
+    margin: 10px;
+}
+
+.articulos {
+    border: solid 1px lightgreen;
+    margin: 0 10px 0 10px;
+    padding: 5px;
+}
+
+.youtube-link {
+    display: flex;
+    justify-content: center;
+    background: rgb(49, 51, 53);
+}
+
+.youtube-boton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background: #FF0000;
+    border-radius: 5px;
+    color: white;
+    margin: 5px;
+    padding: 0 7px;
+
+}
+
+.icono-youtube-grande {
+    height: 1.5rem;
+    width: 1.5rem;
+
+
+}
+
+/* Aside */
+.aside {
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 20px;
+}
+
+.aside h2 {
+    margin: 20px 0 20px 0;
+}
+
+.galeria-videos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+
+/* Footer */
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* gap: 10px; */
+    background: rgb(49, 51, 53);
+    height: 7vh;
+}
+
+.footer a {
+    color: white;
+}
+
+.footer-iconos {
+    width: 1.1rem;
+    height: 1.1rem;
+}
+
+.footer-iconos:hover {
+    opacity: 95%;
+    width: 1.6rem;
+    height: 1.6rem;
+}
+
+.post-footer {
+    background: lightcyan;
+    height: 2vh;
+    color: black;
+    font-size: 0.5rem;
+    text-align: center;
+    font-style: italic;
+}
+
+
+/* Gadgets */
+
+/* Contacto */
+
+.form {
+    background: lightcyan;
+    height: 100vh;
+    padding-left: 10px;
+
+}
+
+.pre-formulario {
+    margin-bottom: 20px;
+}
+
+.dossier {
+    color: red;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+.dossier:hover {
+    text-decoration: underline;
+}
+
+/* Contacto/ Formulario */
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 10px;
+}
+
+
+.formulario textarea {
+    resize: none;
+    background: lightgrey;
+    padding: 7px 0 0 7px;
+}
+
+
+.formulario input {
+    background: lightgrey;
+    height: 2rem;
+}
+
+.btn-form:hover {
+    opacity: 150%;
+}
