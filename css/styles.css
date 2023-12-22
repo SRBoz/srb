@@ -18,6 +18,60 @@
     padding-top: 10px;
 }
 
+/* Boton nav */
+.boton-nav {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    width: 1.5rem;
+    height: 1.3rem;
+    background: transparent;
+    gap: .30rem;
+}
+
+.boton-nav div {
+    background: skyblue;
+    height: 2px;
+    width: 100%;
+    transition: all .5s;
+    transform-origin: left;
+}
+
+
+/* Fin Boton nav */
+
+/* Ventana Desplegable */
+
+
+.boton-nav a {
+    background-color: rgb(49, 51, 53);
+    color: #fff;
+    padding: 10px 12px;
+    display: block;
+    z-index: 10;
+}
+
+.boton-nav a:hover {
+    background-color: #434343;
+}
+
+.links {
+    display: none;
+    position: absolute;
+    min-width: 200px;
+}
+
+.boton-nav:hover>ul {
+    display: block;
+}
+
+.link {
+    position: relative;
+}
+
+.nav>li {
+    float: left;
+}
 
 .nav {
     display: flex;
@@ -37,12 +91,9 @@
 .nav a {
     display: block;
     color: white;
-
 }
 
-.desplegable {
-    float: right;
-}
+
 
 /*  Fin Header */
 
@@ -133,6 +184,7 @@
     /* gap: 10px; */
     background: rgb(49, 51, 53);
     height: 7vh;
+    width: 100%;
 }
 
 .footer a {
@@ -228,8 +280,54 @@
     height: 400px;
     width: 400px;
     object-fit: cover;
+    z-index: -10;
 
 }
 
 
 /* Media Queries */
+
+
+@media screen and (max-width: 679px) {
+    .bienvenidos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .carousel-inner img {
+        height: 250px;
+        width: 100%;
+
+    }
+
+    .post-footer h2 {
+        font-size: 20px;
+    }
+}
+
+
+@media screen and (max-width: 430px) {
+
+
+
+    .post-footer h2 {
+        font-size: 15px;
+
+    }
+
+
+}
+
+@media screen and (max-width: 145px) {
+
+
+
+    .post-footer h2 {
+        font-size: 10px;
+
+    }
+
+
+}
