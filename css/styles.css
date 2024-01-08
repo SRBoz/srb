@@ -9,10 +9,17 @@
 
 /*  Inicio Header */
 
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
 
 .header {
-    background-image: url(/images/header-viajero.jpg);
-    background-position: center;
+    background-image: url(/images/Header-Aprendizaje-Viajero-blog-de-viajes.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 10vh;
     background-repeat: round;
     padding-top: 10px;
@@ -106,6 +113,10 @@
     text-align: center;
 }
 
+.texto-margen {
+    margin: 0 10px;
+}
+
 .bienvenidos {
     display: flex;
     justify-content: space-between;
@@ -173,6 +184,38 @@
     gap: 20px;
 }
 
+.imagenes-let-pablo {
+    margin: 0 10px;
+    display: grid;
+    align-items: center;
+    gap: 10px;
+    grid-template-columns: 0.2fr 1fr 1fr 1fr 0.2fr;
+    grid-template-areas:
+        ". texto let pablo ."
+    ;
+}
+
+.texto-qs {
+    grid-area: texto;
+}
+
+.let-av {
+    grid-area: let;
+    text-align: center;
+}
+
+
+.pablo-av {
+    grid-area: pablo;
+    text-align: center;
+}
+
+.foto {
+    width: 500px;
+    height: 600px;
+    border: solid 1px;
+}
+
 /* Fin Main */
 
 /* Inicio Footer */
@@ -183,8 +226,10 @@
     align-items: center;
     /* gap: 10px; */
     background: rgb(49, 51, 53);
-    height: 7vh;
+    height: 3em;
     width: 100%;
+    margin-top: auto;
+
 }
 
 .footer a {
@@ -217,6 +262,7 @@
 /* Inicio Contacto */
 
 .form {
+    text-align: center;
     background: lightcyan;
     height: 100vh;
     padding-left: 10px;
@@ -246,6 +292,9 @@
     margin-top: 10px;
 }
 
+.textarea {
+    border: solid black 2px;
+}
 
 .formulario textarea {
     resize: none;
@@ -288,6 +337,60 @@
 /* Media Queries */
 
 
+
+
+@media screen and (max-width: 1160px) {
+
+    .imagenes-let-pablo {
+        justify-content: center;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "texto texto"
+            "let pablo"
+            "let pablo"
+            "let pablo"
+        ;
+    }
+
+    .titulo {
+        text-align: center;
+    }
+}
+
+
+@media screen and (max-width: 1134px) {
+
+    .foto {
+        width: 450px;
+        height: 550px;
+    }
+}
+
+@media screen and (max-width: 920px) {
+
+    .foto {
+        width: 400px;
+        height: 500px;
+    }
+}
+
+@media screen and (max-width: 815px) {
+
+    .foto {
+        width: 350px;
+        height: 450px;
+    }
+}
+
+@media screen and (max-width: 722px) {
+
+    .foto {
+        width: 300px;
+        height: 400px;
+    }
+}
+
 @media screen and (max-width: 679px) {
     .bienvenidos {
         display: flex;
@@ -307,15 +410,49 @@
     }
 }
 
+@media screen and (max-width: 620px) {
+
+    .foto {
+        width: 250px;
+        height: 350px;
+    }
+}
+
+
+@media screen and (max-width: 516px) {
+
+
+    .imagenes-let-pablo {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+            "texto"
+            "let"
+            "pablo"
+        ;
+    }
+
+    .foto {
+        width: 300px;
+        height: 400px;
+    }
+
+
+}
 
 @media screen and (max-width: 430px) {
-
-
 
     .post-footer h2 {
         font-size: 15px;
 
     }
+
+    .textarea {
+        height: 100px;
+        width: 230px;
+    }
+
+
 
 
 }
