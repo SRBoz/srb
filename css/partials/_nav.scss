@@ -1,0 +1,76 @@
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    background: rgb(49, 51, 53);
+    height: auto;
+    width: 100%;
+
+
+    a {
+        display: block;
+        color: white;
+
+
+        &:hover {
+            display: block;
+            background: #434343;
+        }
+    }
+
+    >li {
+        float: left;
+
+    }
+
+    .boton-nav {
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        width: 1.5rem;
+        height: 1.3rem;
+        background: transparent;
+        gap: .30rem;
+
+        &:hover>ul {
+            display: block;
+
+        }
+
+        div {
+            background: skyblue;
+            height: 2px;
+            width: 100%;
+            transition: all .5s;
+            transform-origin: left;
+        }
+
+
+
+        a {
+            background-color: rgb(49, 51, 53);
+            color: #fff;
+            padding: 10px 12px;
+            display: block;
+            z-index: 10;
+            transition-duration: 1s;
+            transition-timing-function: ease-out;
+
+            &:hover {
+                background-color: #434343;
+            }
+        }
+
+        .links {
+            display: none;
+            position: absolute;
+            min-width: 200px;
+
+            .link {
+                position: relative;
+            }
+        }
+
+    }
+}

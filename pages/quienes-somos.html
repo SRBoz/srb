@@ -4,8 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quienes somos</title>
-    <link rel="stylesheet" href="../css/styles.css">
+    <title>Quienes somos | AV</title>
+    <meta name="description" content="Aqui te damos una breve descripcion de quienes somos nosotoros, los Viajeros">
+    <meta name="keywords"
+        content="Guías de viaje. Viajes de aventura. Destinos turísticos. Viajes económicos. Consejos de viaje. Viajes de fin de semana">
+    <link rel="stylesheet" href="/css/estilos.css">
 </head>
 <!-- Inicio Header -->
 
@@ -15,7 +18,8 @@
     <!-- Inicio Nav -->
     <nav>
         <ul class="nav">
-            <a href="../index.html"><img src="../icons/avion-home.png" alt="✈"></a>
+            <a href="../index.html"><img src="../icons/avion-home.png" title="imgagen de avion"
+                    alt="imagen de avion de inicio"></a>
 
             <li class="boton-nav">
                 <div></div>
@@ -54,11 +58,13 @@
         <div class="let-av">
             <h3 style="text-align: center;" class="texto-let">Let, la mitad creativa</h3>
 
-            <img class="let-av foto" src="../images/Let-Aprendizaje-Viajero.jpg" alt="imagen de Let">
+            <img class="let-av foto" src="../images/Let-Aprendizaje-Viajero.jpg" title="Let de de Aprendizaje Viajero"
+                alt="Foto de Let de Aprendizaje Viajero">
         </div>
         <div class="pablo-av">
             <h3 style="text-align: center;" class="texto-pablo">Pablo, la mitad analítica</h3>
-            <img class="pablo-av foto" src="../images/Pablo-Aznar-AV.jpg" alt="imagen de Pablo">
+            <img class="pablo-av foto" src="../images/Pablo-Aznar-AV.jpg" title="Pablo de de Aprendizaje Viajero"
+                alt="Foto de Pablo de Aprendizaje Viajero">
 
         </div>
     </main>
@@ -67,12 +73,12 @@
 
     <!-- Inicio Footer -->
     <footer class="footer">
-        <a href="#"><img class="footer-iconos" src="../icons/instagram.png" alt=""></a>
-        <a href="#"><img class="footer-iconos" src="../icons/facebook.png" alt=""></a>
-        <a href="#"><img class="footer-iconos" src="../icons/twitter.png" alt=""></a>
+        <a href="#"><img class="footer-iconos" src="../icons/instagram.png" alt="icono de instragram"></a>
+        <a href="#"><img class="footer-iconos" src="../icons/facebook.png" alt="icono de Facebook"></a>
+        <a href="#"><img class="footer-iconos" src="../icons/twitter.png" alt="icono de Twitter"></a>
         <a href="https://www.youtube.com/aprendizajeviajero"><img class="footer-iconos" src="../icons/youtube.png"
-                alt=""></a>
-        <a href="#"><img class="footer-iconos" src="../icons/linkedin.png" alt=""></a>
+                alt="Icono de Youtube"></a>
+        <a href="#"><img class="footer-iconos" src="../icons/linkedin.png" alt="icono de Linkedin"></a>
 
 
     </footer>
@@ -80,6 +86,41 @@
         <h2>@AprendizajeViajero</h2>
     </div>
     <!-- Fin Footer -->
+
+    <style>
+        .imagenes-let-pablo {
+            margin: 0 10px;
+            display: grid;
+            align-items: center;
+            gap: 10px;
+            grid-template-columns: 0.2fr 1fr 1fr 1fr 0.2fr;
+            grid-template-areas:
+                ". texto let pablo ."
+            ;
+
+            .texto-qs {
+                grid-area: texto;
+            }
+
+            .let-av {
+                grid-area: let;
+                text-align: center;
+            }
+
+
+            .pablo-av {
+                grid-area: pablo;
+                text-align: center;
+            }
+
+            .foto {
+                width: 300px;
+                height: 400px;
+                border: solid 1px;
+            }
+
+        }
+    </style>
 </body>
 
 </html>

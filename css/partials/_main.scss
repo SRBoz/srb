@@ -1,0 +1,77 @@
+.main {
+
+    .bienvenidos {
+        display: flex;
+        justify-content: space-between;
+
+        .parrafos-bienvenidos {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin: 10px;
+        }
+
+        .img-bienvenidos {
+            height: 15rem;
+            margin: 10px;
+        }
+    }
+
+    .youtube-link {
+        display: flex;
+        justify-content: center;
+        background: rgb(49, 51, 53);
+
+        .youtube-boton {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+            background: #FF0000;
+            border-radius: 5px;
+            color: white;
+            margin: 5px;
+            padding: 0 7px;
+
+            .icono-youtube-grande {
+                height: 1.5rem;
+                width: 1.5rem;
+            }
+
+        }
+    }
+
+    .aside {
+        text-align: center;
+        text-decoration: underline;
+        margin-bottom: 20px;
+
+        h2 {
+            margin: 20px 0 20px 0;
+        }
+
+        .galeria-videos {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+    }
+
+    #titulo {
+        text-align: center;
+    }
+
+    .texto-margen {
+        margin: 0 10px;
+    }
+
+
+
+    .articulos {
+        border: solid 1px lightgreen;
+        margin: 0 10px 0 10px;
+        padding: 5px;
+    }
+}

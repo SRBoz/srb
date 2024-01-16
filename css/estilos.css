@@ -1,0 +1,298 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: lightcyan;
+}
+
+.header {
+  background-image: url(/images/Header-Aprendizaje-Viajero-blog-de-viajes.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 10vh;
+  background-repeat: round;
+  padding-top: 10px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+  background: rgb(49, 51, 53);
+  height: auto;
+  width: 100%;
+}
+.nav a {
+  display: block;
+  color: white;
+}
+.nav a:hover {
+  display: block;
+  background: #434343;
+}
+.nav > li {
+  float: left;
+}
+.nav .boton-nav {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  width: 1.5rem;
+  height: 1.3rem;
+  background: transparent;
+  gap: 0.3rem;
+}
+.nav .boton-nav:hover > ul {
+  display: block;
+}
+.nav .boton-nav div {
+  background: skyblue;
+  height: 2px;
+  width: 100%;
+  transition: all 0.5s;
+  transform-origin: left;
+}
+.nav .boton-nav a {
+  background-color: rgb(49, 51, 53);
+  color: #fff;
+  padding: 10px 12px;
+  display: block;
+  z-index: 10;
+  transition-duration: 1s;
+  transition-timing-function: ease-out;
+}
+.nav .boton-nav a:hover {
+  background-color: #434343;
+}
+.nav .boton-nav .links {
+  display: none;
+  position: absolute;
+  min-width: 200px;
+}
+.nav .boton-nav .links .link {
+  position: relative;
+}
+
+.main .bienvenidos {
+  display: flex;
+  justify-content: space-between;
+}
+.main .bienvenidos .parrafos-bienvenidos {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 10px;
+}
+.main .bienvenidos .img-bienvenidos {
+  height: 15rem;
+  margin: 10px;
+}
+.main .youtube-link {
+  display: flex;
+  justify-content: center;
+  background: rgb(49, 51, 53);
+}
+.main .youtube-link .youtube-boton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  background: #FF0000;
+  border-radius: 5px;
+  color: white;
+  margin: 5px;
+  padding: 0 7px;
+}
+.main .youtube-link .youtube-boton .icono-youtube-grande {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+.main .aside {
+  text-align: center;
+  text-decoration: underline;
+  margin-bottom: 20px;
+}
+.main .aside h2 {
+  margin: 20px 0 20px 0;
+}
+.main .aside .galeria-videos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.main #titulo {
+  text-align: center;
+}
+.main .texto-margen {
+  margin: 0 10px;
+}
+.main .articulos {
+  border: solid 1px lightgreen;
+  margin: 0 10px 0 10px;
+  padding: 5px;
+}
+
+.form {
+  text-align: center;
+  background: lightcyan;
+  height: 100vh;
+  padding-left: 10px;
+}
+.form .pre-formulario {
+  margin-bottom: 20px;
+}
+.form .pre-formulario .dossier {
+  color: red;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+}
+.form .pre-formulario .dossier:hover {
+  text-decoration: underline;
+}
+.form .formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 10px;
+}
+.form .formulario .textarea {
+  border: solid black 2px;
+}
+.form .formulario textarea {
+  resize: none;
+  background: lightgrey;
+  padding: 7px 0 0 7px;
+}
+.form .formulario input {
+  background: lightgrey;
+  height: 2rem;
+}
+.form .formulario .btn-form:hover {
+  opacity: 150%;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* gap: 10px; */
+  background: rgb(49, 51, 53);
+  height: 3em;
+  width: 100%;
+  margin-top: auto;
+}
+.footer a {
+  color: white;
+}
+.footer .footer-iconos {
+  width: 1.1rem;
+  height: 1.1rem;
+  transition-duration: 1s;
+  transition-timing-function: ease-out;
+}
+.footer .footer-iconos:hover {
+  opacity: 95%;
+  width: 1.6rem;
+  height: 1.6rem;
+  transform: rotateY(360deg);
+}
+
+.post-footer {
+  background: lightcyan;
+  height: 2vh;
+  color: black;
+  font-size: 0.5rem;
+  text-align: center;
+  font-style: italic;
+}
+
+@media screen and (max-width: 1160px) {
+  .imagenes-let-pablo {
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "texto texto" "let pablo" "let pablo" "let pablo";
+  }
+  .titulo {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 1134px) {
+  .foto {
+    width: 450px;
+    height: 550px;
+  }
+}
+@media screen and (max-width: 920px) {
+  .foto {
+    width: 400px;
+    height: 500px;
+  }
+}
+@media screen and (max-width: 815px) {
+  .foto {
+    width: 350px;
+    height: 450px;
+  }
+}
+@media screen and (max-width: 722px) {
+  .foto {
+    width: 300px;
+    height: 400px;
+  }
+}
+@media screen and (max-width: 679px) {
+  .bienvenidos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .carousel-inner img {
+    height: 250px;
+    width: 100%;
+  }
+  .post-footer h2 {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 620px) {
+  .foto {
+    width: 250px;
+    height: 350px;
+  }
+}
+@media screen and (max-width: 516px) {
+  .imagenes-let-pablo {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "texto" "let" "pablo";
+  }
+  .foto {
+    width: 300px;
+    height: 400px;
+  }
+}
+@media screen and (max-width: 430px) {
+  .post-footer h2 {
+    font-size: 15px;
+  }
+  .textarea {
+    height: 100px;
+    width: 230px;
+  }
+}
+@media screen and (max-width: 145px) {
+  .post-footer h2 {
+    font-size: 10px;
+  }
+}/*# sourceMappingURL=estilos.css.map */

@@ -4,9 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Europa</title>
+    <title>Europa | AV</title>
+    <meta name="description" content="Algunas imagenes de lugares de Europa que deberias visitar">
+    <meta name="keywords"
+        content="Guías de viaje. Viajes de aventura. Destinos turísticos. Viajes económicos. Consejos de viaje. Viajes de fin de semana">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="/css/estilos.css">
+    <link rel="stylesheet" href="/css/styles.css">
 
 </head>
 
@@ -20,7 +24,8 @@
 
     <nav>
         <ul class="nav">
-            <a href="../index.html"><img src="../icons/avion-home.png" alt="✈"></a>
+            <a href="../index.html"><img src="../icons/avion-home.png" title="imgagen de avion"
+                    alt="imagen de avion de inicio"></a>
 
             <li class="boton-nav">
                 <div></div>
@@ -44,6 +49,7 @@
 
     <main class="carrusel">
         <div id="carouselExampleIndicators" class="carousel slide">
+
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
                     aria-current="true" aria-label="Slide 1"></button>
@@ -52,17 +58,22 @@
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
                     aria-label="Slide 3"></button>
             </div>
+
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="../images/francia.jpg" class="d-block w-100" alt="foto de Francia">
+                    <img height="700px" width="700px" class="img-carousel" src="../images/francia.jpg"
+                        title="arco del triunfo" alt="foto del Arco del Triunfo de Francia">
                 </div>
                 <div class="carousel-item">
-                    <img src="../images/roma.jpg" class="d-block w-100" alt="foto de Roma">
+                    <img height="700px" width="700px" class="img-carousel" src="../images/roma.jpg"
+                        title="Coliseo de Roma" alt="foto del Coliseo de Roma">
                 </div>
                 <div class="carousel-item">
-                    <img src="../images/madrid.jpg" class="d-block w-100" alt="foro de Madrid">
+                    <img height="700px" width="700px" src="../images/madrid.jpg" title="La Gran Via en madrid"
+                        alt="foto del Corte Ingles y la Gran Via en Madrid">
                 </div>
             </div>
+
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
                 data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -81,12 +92,12 @@
     <!-- Inicio Footer -->
     <br>
     <footer class="footer">
-        <a href="#"><img class="footer-iconos" src="../icons/instagram.png" alt=""></a>
-        <a href="#"><img class="footer-iconos" src="../icons/facebook.png" alt=""></a>
-        <a href="#"><img class="footer-iconos" src="../icons/twitter.png" alt=""></a>
+        <a href="#"><img class="footer-iconos" src="../icons/instagram.png" alt="icono de instragram"></a>
+        <a href="#"><img class="footer-iconos" src="../icons/facebook.png" alt="icono de Facebook"></a>
+        <a href="#"><img class="footer-iconos" src="../icons/twitter.png" alt="icono de Twitter"></a>
         <a href="https://www.youtube.com/aprendizajeviajero"><img class="footer-iconos" src="../icons/youtube.png"
-                alt=""></a>
-        <a href="#"><img class="footer-iconos" src="../icons/linkedin.png" alt=""></a>
+                alt="Icono de Youtube"></a>
+        <a href="#"><img class="footer-iconos" src="../icons/linkedin.png" alt="icono de Linkedin"></a>
 
 
 
@@ -97,6 +108,17 @@
     </div>
     <!-- Fin Footer -->
     <script src="../js/bootstrap.bundle.min.js"></script>
+
+
+    <style>
+        .carrusel {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: rgb(49, 51, 53);
+            border: solid lightcyan;
+        }
+    </style>
 
 </body>
 

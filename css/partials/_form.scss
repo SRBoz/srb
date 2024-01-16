@@ -1,0 +1,48 @@
+.form {
+    text-align: center;
+    background: lightcyan;
+    height: 100vh;
+    padding-left: 10px;
+
+    .pre-formulario {
+        margin-bottom: 20px;
+
+        .dossier {
+            color: red;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+    }
+
+    .formulario {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 10px;
+
+        .textarea {
+            border: solid black 2px;
+        }
+
+        textarea {
+            resize: none;
+            background: lightgrey;
+            padding: 7px 0 0 7px;
+        }
+
+
+        input {
+            background: lightgrey;
+            height: 2rem;
+        }
+
+        .btn-form:hover {
+            opacity: 150%;
+        }
+    }
+}
